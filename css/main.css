@@ -27,7 +27,8 @@ header {
   color: white;
 }
 
-nav, nav ul {
+nav,
+nav ul {
   display: none;
 }
 
@@ -72,15 +73,6 @@ nav.open ul {
   flex-direction: column;
   margin-top: 20%;
   margin-bottom: 20%;
-}
-
-nav.open ul li {
-  margin-bottom: 5vh;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 20px;
 }
 
 nav.open .nav-link {
@@ -312,6 +304,15 @@ li {
   color: #fff;
   transition: 350ms;
   cursor: pointer;
+}
+
+nav.open ul li {
+  margin-bottom: 5vh;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 20px;
 }
 
 .project-stacks li:hover {
