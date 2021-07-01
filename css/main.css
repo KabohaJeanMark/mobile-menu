@@ -51,6 +51,42 @@ nav, nav ul {
   color: white;
 }
 
+.hidden.fas {
+  display: none;
+}
+
+nav.open {
+  display: block;
+  height: 92vh;
+  background-color: rgba(55, 127, 223, 0.9);
+  position: absolute;
+  top: 8%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+}
+
+nav.open ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+nav.open ul li {
+  margin-bottom: 5vh;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 20px;
+}
+
+nav.open .nav-link {
+  color: #fff;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -441,6 +477,10 @@ textarea {
   }
 
   .menu-bars {
+    display: none;
+  }
+
+  nav.open {
     display: none;
   }
 
