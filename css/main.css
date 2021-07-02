@@ -27,7 +27,8 @@ header {
   color: white;
 }
 
-#desktop-nav, #desktop-nav ul {
+nav,
+nav ul {
   display: none;
 }
 
@@ -49,6 +50,41 @@ header {
   width: 18px;
   height: 12px;
   color: white;
+}
+
+.hidden.fas {
+  display: none;
+}
+
+nav.open {
+  display: block;
+  height: 92vh;
+  background-color: rgba(55, 127, 223, 0.9);
+  position: absolute;
+  top: 8%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+}
+
+nav.open ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 5%;
+}
+
+nav.open .nav-link {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.list-anchor {
+  border-bottom: 1px solid #d2d5dbbb;
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
 }
 
 main {
@@ -278,6 +314,15 @@ li {
   cursor: pointer;
 }
 
+nav.open ul li {
+  margin-bottom: 5vh;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 20px;
+}
+
 .project-stacks li:hover {
   background: rgba(0, 0, 0, 0.349);
 }
@@ -444,11 +489,15 @@ textarea {
     display: none;
   }
 
-  #desktop-nav {
+  nav.open {
+    display: none;
+  }
+
+  nav {
     display: block;
   }
 
-  #desktop-nav ul {
+  nav ul {
     display: flex;
     margin-right: 10vw;
   }
